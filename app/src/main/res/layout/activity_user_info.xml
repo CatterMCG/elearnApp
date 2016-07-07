@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/rl_user_info_top"
+        android:background="#FFD33B32">
+        <RelativeLayout
+            android:id="@+id/rl_user_info_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_back"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="资料完善"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_user_info_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/rl_user_info_top"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tv_user_info_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="昵称 "
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:layout_marginLeft="40dp"
+            android:gravity="center_vertical"/>
+        <EditText
+            android:id="@+id/et_user_info_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="请输入你可爱的昵称哦"
+            android:singleLine="true"
+            android:textSize="15dp"
+            android:layout_marginRight="40dp"
+            android:layout_toRightOf="@id/tv_user_info_nickname"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_user_info_selfintroduce"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/rl_user_info_nickname"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_user_info_selfintroduce"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="简介 "
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:layout_marginLeft="40dp"
+            android:gravity="center_vertical"/>
+        <EditText
+            android:id="@+id/et_user_info_selfintroduce"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="一句话介绍你自己哦"
+            android:singleLine="true"
+            android:textSize="15dp"
+            android:layout_marginRight="40dp"
+            android:layout_toRightOf="@id/tv_user_info_selfintroduce"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_user_info_school"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/rl_user_info_selfintroduce"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_user_info_school"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="学校 "
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:layout_marginLeft="40dp"
+            android:gravity="center_vertical"/>
+        <EditText
+            android:id="@+id/et_user_info_school"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="现在就读的学校哦"
+            android:singleLine="true"
+            android:textSize="15dp"
+            android:layout_marginRight="40dp"
+            android:layout_toRightOf="@id/tv_user_info_school"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_user_info_major"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/rl_user_info_school"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_user_info_major"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="专业 "
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:layout_marginLeft="40dp"
+            android:gravity="center_vertical"/>
+        <EditText
+            android:id="@+id/et_user_info_major"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="你的专业哦"
+            android:singleLine="true"
+            android:textSize="15dp"
+            android:layout_marginRight="40dp"
+            android:layout_toRightOf="@id/tv_user_info_major"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_user_info_email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/rl_user_info_major"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_user_info_email"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="邮箱 "
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:layout_marginLeft="40dp"
+            android:gravity="center_vertical"/>
+        <EditText
+            android:id="@+id/et_user_info_email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="你使用最频繁的邮箱哦"
+            android:singleLine="true"
+            android:textSize="15dp"
+            android:layout_marginRight="40dp"
+            android:layout_toRightOf="@id/tv_user_info_email"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_user_info_send"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="确定"
+        android:textColor="#ffffff"
+        android:layout_below="@id/rl_user_info_email"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_btn"
+        android:layout_margin="40dp"/>
+
+</RelativeLayout>

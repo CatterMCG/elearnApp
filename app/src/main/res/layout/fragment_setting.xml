@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <ImageView
+            android:id="@+id/imgv_setting_user"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/course_default_img"/>
+        <TextView
+            android:id="@+id/tv_setting_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/imgv_setting_user"
+            android:text="马小易"
+            android:layout_marginTop="15dp"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/bg_imgv_divider"/>
+
+    <!-- 资料完善、您问我答、密码修改-->
+    <RelativeLayout
+        android:id="@+id/rl_setting_1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/imgv_setting_1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="资料完善"
+            android:textSize="16dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/imgv_setting_1"/>
+    </RelativeLayout>
+
+    <!--用于小item的下划线问题-->
+<!--    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#FFD8D8D8"
+        android:layout_marginLeft="40dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_2"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <ImageView
+            android:id="@+id/imgv_setting_2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="你问我答"
+            android:textSize="16dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/imgv_setting_2"/>
+    </RelativeLayout>-->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#FFD8D8D8"
+        android:layout_marginLeft="40dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/imgv_setting_3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="密码修改"
+            android:textSize="16dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/imgv_setting_3"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/bg_imgv_divider"/>
+
+    <!--考试提醒-->
+    <RelativeLayout
+        android:id="@+id/rl_setting_4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/imgv_setting_4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="考试提醒"
+            android:textSize="16dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/imgv_setting_4"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#FFD8D8D8"
+        android:layout_marginLeft="40dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_8"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/imgv_setting_8"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="信息同步"
+            android:textSize="16dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/imgv_setting_8"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/bg_imgv_divider"/>
+
+    <!-- 软件版本、意见反馈、关于我们-->
+    <RelativeLayout
+        android:id="@+id/rl_setting_5"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/imgv_setting_5"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="软件版本"
+            android:textSize="16dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/imgv_setting_5"/>
+    </RelativeLayout>
+
+    <!--用于小item的下划线问题-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#FFD8D8D8"
+        android:layout_marginLeft="40dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_6"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/imgv_setting_6"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="意见反馈"
+            android:textSize="16dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/imgv_setting_6"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#FFD8D8D8"
+        android:layout_marginLeft="40dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_7"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/imgv_setting_7"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="关于我们"
+            android:textSize="16dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/imgv_setting_7"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#FFD8D8D8" />
+
+    <!-- 用户退出 -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="用户退出"
+        android:textColor="#FFD33B32"
+        android:id="@+id/btn_setting_exit"
+        android:background="@drawable/bg_btn_exit"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"/>
+
+</LinearLayout>

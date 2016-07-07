@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_singlechoose_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:textSize="17dp"
+                android:text="1/10"/>
+
+            <TextView
+                android:id="@+id/tv_test_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Java接口的方法修饰符可以为？（忽略内部接口）"
+                android:textColor="#000000"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <RadioGroup
+                android:id="@+id/rg_test_choose"
+                android:layout_below="@id/tv_test_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp">
+                <RadioButton
+                    android:id="@+id/btn_answer_A"
+                    android:text="A.private"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/btn_answer_B"
+                    android:text="B.protected"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/btn_answer_C"
+                    android:text="C.final"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/btn_answer_D"
+                    android:text="D.abstract"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <ImageView
+                android:layout_below="@id/rg_test_choose"
+                android:id="@+id/imgv_test_diver"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#FFD8D8D8"
+                android:visibility="gone"/>
+            <Button
+                android:id="@+id/btn_test_commit"
+                android:layout_below="@id/rg_test_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:text="提交答案"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:background="#FFEEEEF3"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/tv_test_analysis_content"
+                android:layout_below="@+id/imgv_test_diver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:visibility="gone"
+                android:layout_margin="20dp"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

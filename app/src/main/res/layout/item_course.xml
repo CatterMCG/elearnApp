@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:id="@+id/imgv_course"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/tv_course_name"
+        android:text="数据结构"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_remind_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#FFD33B32">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="考试提醒"
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_remind_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_back" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_alarmclock_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_remind_top"
+        android:layout_centerHorizontal="true"
+        android:text="显示时间"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/btn_alarmclock_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_alarmclock_time"
+        android:layout_centerHorizontal="true"
+        android:text="设置时间" />
+
+
+</RelativeLayout>

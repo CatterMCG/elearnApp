@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false">
+
+    <RelativeLayout
+        android:id="@+id/rl_main_top"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#FFD33B32"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/tv_main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="title"
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_main_top"
+        android:layout_marginBottom="40dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fl_fragment_content"
+            ></FrameLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/rg_main_button"
+            android:orientation="horizontal"
+            android:background="#cc3333">
+            <RadioButton
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_main_course"
+                android:text="课程"
+                android:textColor="#000000"
+                android:button="@null"
+                android:onClick="click"
+                android:gravity="center"/>
+            <RadioButton
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_main_selftest"
+                android:text="自测"
+                android:textColor="#000000"
+                android:onClick="click"
+                android:textSize="14dp"
+                android:button="@null"
+                android:gravity="center" />
+            <RadioButton
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_main_setting"
+                android:text="设置"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:onClick="click"
+                android:button="@null"
+                android:gravity="center"/>
+        </RadioGroup>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

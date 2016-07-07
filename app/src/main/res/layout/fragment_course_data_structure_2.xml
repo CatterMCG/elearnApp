@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--希尔排序-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="4.希尔排序："
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="基本规则：选一个合适的增量，完成第一趟；选择一个合适的且更小的增量，完成第二趟，直到最后完成所有的排序（增量的选取是一个难题，而且希尔排序不会考得很深入，但是这个排序的确很优秀，所以你必须知道它的过程）。"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="注意：增量序列中的值一般没有除1以外的公因子，并且最后一个增量值必须等于1.\n典型例题：直接使用严蔚敏老师书上的一个P271例题，大家看懂过程就行"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/course_data_structure_4" />
+
+            <!--快速排序-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="5.快速排序："
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="一般考察的形式是给一组数，要求写出每一趟排序的结果，直到最后完全排序\n典型例题：直接使用严蔚敏老师书上的一个P275例题，讲解在图下方"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/course_data_structure_5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="①比较i和j指向的数值，当i>j,交换i和j指向的值 \n②让另外一个指针向中心移动 \n③重复①②过程直到i和j重合，则完成一趟 \n④将分开的左边和右边继续上述3个过程完成同样的操作，直到最终完成全部的排序"
+                android:textSize="16dp" />
+            <!--利用关键字建堆-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="6.利用关键字建堆："
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="堆分为大根堆(即根节点的数值比左右子树上面的节点数值都大）和小根堆(即根节点的数值比左右子树上面的节点数值都小），要想完成堆的一些操作，必须先根据数据建立大根堆或小根堆，所以这个过程十分的重要，大家一定要掌握这个建初始堆的过程，根据我讲解的规则多练习两个题目基本就能够掌握"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="基本规则：n个结点的完全二叉树，最后一个结点是第n/2个结点的孩子。对第n/2个结点为根的子树筛选，使该子树成为堆。依次往前对（n/2到1）为根的结点进行筛选，当然有可能破坏下一级的堆，使用同样的方法对下一级的堆进行建立。
+        \n典型例题：根据(53,17,78,09,45,65,87,32)建大根堆，建堆过程以及数字的交换顺序都在上面，大家领悟一下"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/course_data_structure_6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="右滑下一页"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

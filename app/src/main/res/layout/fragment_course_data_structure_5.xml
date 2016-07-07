@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:text="资料下载"
+        android:textSize="25dp"
+        android:textColor="#000000"/>
+
+    <LinearLayout
+        android:id="@+id/rl_download_data_structure_1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_download_data_structure_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textSize="18dp"
+            android:textColor="#FF1E7BBA"
+            android:text="1.中南民族大学历年考试试卷下载"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_download_data_structure_2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textSize="18dp"
+            android:textColor="#FF1E7BBA"
+            android:text="2.武汉大学研究生考试数据结构试卷下载"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/rl_download_data_structure_3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textSize="18dp"
+            android:textColor="#FF1E7BBA"
+            android:text="3.数据结构相关书籍下载"/>
+    </LinearLayout>
+
+</LinearLayout>

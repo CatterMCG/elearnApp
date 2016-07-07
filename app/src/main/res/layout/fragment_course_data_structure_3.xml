@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textColor="#000000"
+                android:text="7.折半查找："
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:textSize="16dp"
+                android:text="考察点：\n① 根据给出的元素画判定树\n② 查找一个元素，写出比较次数或者写出与哪些元素比较过\n③ 分别计算成功和不成功平均查找长度"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="这类题目也是比较简单的，下面我会给出一个典型例题，然后给出一般思路和注意细节，大家就可以很轻松的解决这类题目了"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="5dp"
+                android:textSize="16dp"
+                android:text="典型例题：设有序表中的元素依次为017,094,154,170,275,503,509,512,553,612,677,765,897,908\n1）试画出对其进行折半查找的判定树\n2）若查找275或684的元素，将依次与表中哪些元素比较\n3）分别计算查找成功和不成功的平均查找长度\n（下图答案）" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/course_data_structure_7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="解析：\n1.画判定树的时候其实就是画一个平衡二叉树（当然我是默认你会平衡二叉树的），注意画出来每个数字元素都是有左右孩子的。\n2.进行查找的时候只要仔细一点照着自己写的查找树一点一点比较是不会出错的\n3.这个是难点，也不容易理解。计算查找成功的时候，注意分母是圆圈的个数，分子是每一层的n乘以这一层的长度l然后加起来的总和，看上面的式子很容易理解；查找失败，跟查找成功很像，分母是方框的个数，分子依旧是长度乘以相应层的方框个数，上图中的25写错了。\n总结：所以经过上面的分析，只要大家能够写出查找树，就能够很完美的回答这些问题"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textColor="#000000"
+                android:text="8.DFS(深度优先搜索)和BFS(广度优先搜索)："
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:textSize="16dp"
+                android:text="这类题目一般在选择题中出现，而且一般会和邻接表、邻接矩阵一起出题，只要理解并记住以下几个点就能够很好的解决问题\n①没有权值的无向图和有向图的邻接矩阵是由0（不连接）和1（连接）表示的，无向图邻接矩阵是斜对称的，有向图的邻接矩阵不是的对称的因为有方向；有权值的类似，将0改为∞，将1改为相应的权值。\n②邻接矩阵中，DFS和BFS的时间复杂度都是O(n^2)，空间复杂度都是O(n^2)；邻接表中，DFS和BFS的时间复杂度都是O(n+e)，空间复杂度都是O(n);\n③DFS类似树的先序遍历，BDF类似树的层次遍历。"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="典型例题：\n1.无向图G=(V,E),其中：V={a,b,c,d,e,f},E={(a,b),(a,e),(a,c),(b,e),(c,f),(f,d),(e,d)},对改图从a开始进行深度优先遍历，得到的顶点序列正确的是（）\nA.a,b,e,c,d,f            B.a,c,f,e,b,d\nC.a,e,b,c,f,d            D.a,e,d,f,c,b\n解析：\n先画出图，连接图，要仔细一点不要画错了，然后分析，深度优先遍历一定是先把有连接的顶点弄完再去弄另外的，所以会有很多种情况，出选择题最方便了。所以答案只有D"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="2.一个有向图G的邻接表存储如下图所示，从顶点1出发，对图G进行深度优先遍历所得顶点序列是（）；按广度优先遍历所得序列是（）\nA.125436          B.124536\nC.124563          D.362514"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/course_data_structure_8" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="解析：\n学会看懂这个邻接表，意思就是1指向2和4，2指向5，3指向6和5，4指向2，5指向4，6指向6，把图画出来也行。所以按照深度优先搜索的时候，1先到2，再看2指向5，再看5指向4，再看4指向2，那么再看没有遍历的3指向6，这次全部遍历了，那么顺序就是125436，选A；按照广度优先搜索的时候，1先指向2和4，再看2指向5和4指向2，再看5指向4，再看没有遍历到的3指向6和5，最后遍历6，那么顺序就是124536，选B"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="右滑下一页"
+                android:textSize="16dp"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

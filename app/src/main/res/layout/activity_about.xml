@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/rl_about_top"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#FFD33B32"
+                android:layout_alignParentTop="true">
+                <TextView
+                    android:id="@+id/tv_main_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="关于我们"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_about_back"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_back"
+                        android:layout_centerInParent="true"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_about_above"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_below="@id/rl_about_top">
+                <ImageView
+                    android:id="@+id/imgv_about_logo"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/logo"/>
+                <TextView
+                    android:id="@+id/tv_about_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/imgv_about_logo"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="大学生课程知识学习平台"
+                    android:textColor="#000000"
+                    android:textSize="23dp"/>
+                <TextView
+                    android:id="@+id/tv_about_maker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/imgv_about_logo"
+                    android:layout_below="@id/tv_about_name"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="By MaChengGang From  South-Central University For Nationalities"
+                    android:textColor="#000000"
+                    android:textSize="16dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_about_below"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/rl_about_above"
+                android:background="@drawable/bg_relativelayout"
+                android:layout_margin="8dp">
+                <TextView
+                    android:id="@+id/tv_about_app1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="5dp"
+                    android:layout_marginTop="2dp"
+                    android:text="        这个软件是关于如何提高学生课程知识的平台，在这里用户可以通过注册，并关注相关的课程，可以收到课程教学和相关的考试资料下载，还可以进行自我单线选择的测试。"
+                    android:textSize="18dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_about_app2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="5dp"
+                    android:layout_below="@id/tv_about_app1"
+                    android:layout_marginTop="4dp"
+                    android:text="        这个平台旨在帮助同学们可以短时间内学习课程知识，并且可以很快的接受考试内容，从而提高考试通过率。在这个平台上面集合了很多考试资源，同学们不用到处去找学长或者学弟找资料，直接在这个平台上面进行学习和下载，完全可以通过考试。"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:id="@+id/tv_about_app3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="5dp"
+                    android:layout_below="@id/tv_about_app2"
+                    android:textSize="18dp"
+                    android:layout_marginTop="4dp"
+                    android:text="        另外，开发者也会以专业的角度对某些课程提出深度上面的要求，如果学生用户对这个专业的兴趣和浓厚，对于未来的发展方向、学习思路都会受到很大的启发"/>
+
+                <!--<TextView
+                    android:id="@+id/tv_about_me"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关于开发者："
+                    android:layout_below="@id/tv_about_app3"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="35dp"/>
+                <TextView
+                    android:id="@+id/tv_about_me_github"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GitHub：https://github.com/CatterMCG"
+                    android:layout_below="@id/tv_about_me"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="35dp"/>
+                <TextView
+                    android:id="@+id/tv_about_me_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="邮箱：980991588@qq.com"
+                    android:layout_below="@id/tv_about_me_github"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="35dp"/>
+                <TextView
+                    android:id="@+id/tv_about_me_weixin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="微信：15927129979"
+                    android:layout_below="@id/tv_about_me_email"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="35dp"/>
+                <TextView
+                    android:id="@+id/tv_about_me_weibo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="微博：王子安静"
+                    android:layout_below="@id/tv_about_me_weixin"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="35dp"/>-->
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

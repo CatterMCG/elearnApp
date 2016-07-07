@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <!--搜索界面的设计-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#FFD33B32">
+
+        <RelativeLayout
+            android:id="@+id/rl_search_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_back"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="-13dp"
+            android:id="@+id/search_view"
+            android:queryHint="输入想要搜索的课程"
+            android:inputType="textFilter"
+            android:iconifiedByDefault="false"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="6dp"
+            android:clickable="true"
+            android:background="@drawable/bg_search"
+            ></SearchView>
+
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/lv_searchcourse"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="20dp"
+        ></ListView>
+</LinearLayout>

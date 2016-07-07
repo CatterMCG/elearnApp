@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/rl_newpwd_top"
+        android:background="#FFD33B32">
+        <TextView
+            android:id="@+id/tv_newpwd_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="忘记密码"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+        <RelativeLayout
+            android:id="@+id/rl_newpwd_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_back"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:hint="请输入注册电话号码"
+        android:singleLine="true"
+        android:textSize="14dp"
+        android:paddingLeft="8dp"
+        android:drawablePadding="7dp"
+        android:id="@+id/et_newpwd_phone"
+        android:background="@drawable/bg_edittext"
+        android:drawableLeft="@drawable/phone"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/rl_newpwd_top"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:hint="验证码"
+        android:singleLine="true"
+        android:paddingLeft="8dp"
+        android:drawablePadding="7dp"
+        android:drawableLeft="@drawable/check"
+        android:textSize="14dp"
+        android:id="@+id/et_newpwd_checkcode"
+        android:background="@drawable/bg_edittext"
+        android:layout_below="@+id/et_newpwd_phone"
+        android:layout_marginLeft="20dp"
+        android:layout_toLeftOf="@+id/btn_newpwd_checkcode"
+        android:layout_marginRight="8dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/btn_newpwd_checkcode"
+        android:layout_marginTop="2.5dp"
+        android:text="验证码"
+        android:textSize="10dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/bg_btn"
+        android:layout_below="@+id/et_newpwd_phone"
+        android:layout_alignRight="@+id/et_newpwd_phone"
+        android:layout_alignEnd="@+id/et_newpwd_phone"  />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/et_newpwd_password"
+        android:layout_below="@+id/et_newpwd_checkcode"
+        android:background="@drawable/bg_edittext"
+        android:inputType="textPassword"
+        android:hint="请输入密码（6至10位数字与字母）"
+        android:singleLine="true"
+        android:textSize="14dp"
+        android:drawableLeft="@drawable/password"
+        android:paddingLeft="8dp"
+        android:drawablePadding="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/et_newpwd_password_again"
+        android:layout_below="@+id/et_newpwd_password"
+        android:background="@drawable/bg_edittext"
+        android:inputType="textPassword"
+        android:hint="请再次输入密码"
+        android:singleLine="true"
+        android:textSize="14dp"
+        android:drawableLeft="@drawable/password"
+        android:paddingLeft="8dp"
+        android:drawablePadding="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="重置密码"
+        android:textColor="#ffffff"
+        android:onClick="click"
+        android:id="@+id/btn_newpwd_login"
+        style="?android:attr/borderlessButtonStyle"
+        android:background="@drawable/bg_btn"
+        android:layout_below="@+id/et_newpwd_password_again"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+</RelativeLayout>

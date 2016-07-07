@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/rl_version_top"
+        android:background="#FFD33B32">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="资料下载"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_download_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_back"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/web_view_download"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </WebView>
+
+</LinearLayout>

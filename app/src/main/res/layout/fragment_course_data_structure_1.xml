@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="重要题型"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <!--1.拓扑排序-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="1.拓扑排序："
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="这类题目非常简单，一般就是考察同学们对拓扑排序基本认识。\n注意：一个图要进行有拓扑排序，必须为有向无环图，不然无法得到有序的拓扑排序，这可以以此来判断一个图是否有环。\n典型例题：如图有一个有向无环图,写出它的拓扑排序"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/course_data_structure_1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="关键操作：\n① 选“入度”为0的顶点拿出来（V1或V6）\n② 将这个顶点所有“出度”去掉\n③ 重复①和②的过程直到全部拿出来了\n所以该图的拓扑排序为（V1,V6,V4,V5,V3,V2）或者（V6,V1,V4,V5,V3,V2）"
+                android:textSize="16dp" />
+            <!--构造哈弗曼树和求带权路劲长度wpl-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"
+                android:text="2.构造哈夫曼树（带权路径最小、最优二叉树）和带权路径长度WPL的求解"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:textSize="16dp"
+                android:text="说明：一般题目会给出一个场景，然后给出一组数据，你完全不用管场景是什么样子，第一步要做的就是把数据变成整数（因为有可能给的小数，整数就不用管）然后从小到大排序，接下来根据以下的规则进行操作就可以了。\n典型例题：给出一组数0.05，0.29，0.07，0.08，0.14，0.23，0.03，0.11（我把题目简化了，没有给出场景直接给出一组数）" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toLeftOf="@+id/ll_data_structure_2"
+                    android:text="解：设权W = (5,29,7,8,14,23,3,11) \n第一步：排序 W = (3,5,7,8,11,14,23,29)\n第二步：取出W中最小的两个数（书中称这些数为根）3和5构造出（新的根8放入W）如右图1\n第三步：新根8不大于（7和8），那么同向生长（新根15），如右图2\n第四步：15大于（8和11），那么分支生长（新根19），如右图3\n第五步：19大于（15和14），左边生长（新根29）\n第六步：29大于（19和23），右侧生长（新根42）\n第七步：42大于（29和29），左侧生长（新根58），最有把左右用一个新根连接起来就完成了\n\nWPL=100+58+42+29+19+15+8=271或WPL=2*(29+23)+3*(14+8+11)+4*7+5*(3+5)=271\n\n总结：过程看起来很多，但是理解之后就可以很容易的做出来，不用花多少时间，而且很容易拿分，所以争取看懂，此外多训练一下，检测方法是否有效\n"
+                    android:textSize="16dp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_data_structure_2"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/course_data_structure_2_1" />
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/course_data_structure_2_2" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/course_data_structure_2_3" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center_horizontal"
+
+                        android:background="@drawable/course_data_structure_2_4" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/course_data_structure_2_5" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/course_data_structure_2_6" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="习题：6，13，18，30，7，16（正确答案如下图）"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp"
+                android:background="@drawable/course_data_structure_2_7" />
+            <!--3.最小生成树构成-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textColor="#000000"
+                android:text="3.最小生成树构成（Prim算法和Kurskal算法"
+                android:textSize="16dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="a. Prim算法\n规则：\n① 把所有的边去掉\n② 从最小的一条边开始连，然后从连线上的顶点开始往外部扩展，规则是找最小的边并不能成环。\n典型例题：下左图有一个带权的无向图,那么其流程如下右图"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/course_data_structure_3" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/course_data_structure_3_1" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="b.Kruskal算法\n规则：\n① 去掉所有的边\n② 从最小的边开始找，只找剩下边里面权值最小的，千万不能成环，知道所有的顶点连接（同样的一个题目，此算法的过程如下图）"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/course_data_structure_3_2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="这类题目非常简单，大家只要知道过程就很容易就掌握了"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="右滑下一页"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

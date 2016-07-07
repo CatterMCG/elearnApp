@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/rl_question_top"
+        android:background="#FFD33B32">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你问我答"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_question_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_back"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl_question_under"
+        android:layout_below="@id/rl_question_top">
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_question"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bg_textview"
+            />-->
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入你的问题哦"
+            android:textSize="14dp"
+            android:id="@+id/et_question"
+            android:layout_marginRight="62dp"
+            android:layout_marginLeft="2dp"
+            android:layout_alignParentBottom="true"/>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="2dp"
+            android:id="@+id/btn_question"
+            android:text="发送"
+            android:textColor="#ffffff"
+            android:background="#FFD33B32"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

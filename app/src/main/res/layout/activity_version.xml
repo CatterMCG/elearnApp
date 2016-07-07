@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/rl_version_top"
+        android:background="#FFD33B32">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="软件版本"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_version_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_back"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_version_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_version_top"
+        android:layout_margin="20dp">
+        <TextView
+            android:id="@+id/tv_version_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="版本号：  "
+            android:textSize="15dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_version_"
+            android:text="V1.0"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_version_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_version_version"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="版本内容：\n\n
+            1.提供用户进行自我单项选择的测试功能\n\n
+            2.提供用户考试提醒功能\n\n
+            3.提供用户课程自我学习的功能\n\n
+            4.提供用户互相关注的功能\n\n
+            5.提供用户课程收藏的功能\n\n
+            6.提供用户进行第三方登录功能\n\n
+            7.提供用户进行多平台分享功能"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_version_check"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/rl_version_about"
+        android:layout_marginTop="40dp"
+        android:text="版本检测"
+        android:textColor="#FFD33B32"
+        android:background="@drawable/bg_btn_exit"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll_selftestfragment"
+    android:background="#FFEDEDF2">
+
+    <ExpandableListView
+        android:id="@+id/epdlv_selftest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:cacheColorHint="#ffffff"
+        android:groupIndicator="@drawable/expendablelistview_change"
+        android:dividerHeight="1dp"
+        android:childDivider="#ffffff"
+        android:childIndicatorRight="10dp"
+        android:footerDividersEnabled="true"
+        ></ExpandableListView>
+
+</LinearLayout>
