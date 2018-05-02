@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+
+<web-app >
+	<servlet>
+		<servlet-name>LogLet</servlet-name>
+		<servlet-class>com.servlet.LogLet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>RegLet</servlet-name>
+		<servlet-class>com.servlet.RegLet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>PwdLet</servlet-name>
+		<servlet-class>com.servlet.PwdLet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>FindUserLet</servlet-name>
+		<servlet-class>com.servlet.FindUserLet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>GetCourseLet</servlet-name>
+		<servlet-class>com.servlet.GetCourseLet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UserInfoLet</servlet-name>
+		<servlet-class>com.servlet.UserInfoLet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>VersionLet</servlet-name>
+		<servlet-class>com.servlet.VersionLet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>GetUserCourseInfoLet</servlet-name>
+		<servlet-class>com.servlet.GetUserCourseInfoLet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>SendUserCourseInfoLet</servlet-name>
+		<servlet-class>com.servlet.SendUserCourseInfoLet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>FeedBackLet</servlet-name>
+		<servlet-class>com.servlet.FeedBackLet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>SendUserTestInfoLet</servlet-name>
+		<servlet-class>com.servlet.SendUserTestInfoLet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>GetUserTestInfoLet</servlet-name>
+		<servlet-class>com.servlet.GetUserTestInfoLet</servlet-class>
+	</servlet>
+	
+	
+	<servlet-mapping>
+		<servlet-name>LogLet</servlet-name>
+		<url-pattern>/LogLet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RegLet</servlet-name>
+		<url-pattern>/RegLet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>PwdLet</servlet-name>
+		<url-pattern>/PwdLet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>FindUserLet</servlet-name>
+		<url-pattern>/FindUserLet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GetCourseLet</servlet-name>
+		<url-pattern>/GetCourseLet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserInfoLet</servlet-name>
+		<url-pattern>/UserInfoLet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>VersionLet</servlet-name>
+		<url-pattern>/VersionLet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GetUserCourseInfoLet</servlet-name>
+		<url-pattern>/GetUserCourseInfoLet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SendUserCourseInfoLet</servlet-name>
+		<url-pattern>/SendUserCourseInfoLet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>FeedBackLet</servlet-name>
+		<url-pattern>/FeedBackLet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GetUserTestInfoLet</servlet-name>
+		<url-pattern>/GetUserTestInfoLet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SendUserTestInfoLet</servlet-name>
+		<url-pattern>/SendUserTestInfoLet</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
+
+
+

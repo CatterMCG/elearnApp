@@ -1,46 +1,24 @@
-apply plugin: 'com.android.application'
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
 
-android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.5.0'
+        apply plugin: 'findbugs'
 
-    defaultConfig {
-        applicationId "com.mcg.myapplication"
-        minSdkVersion 15
-        targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
-    }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-    }
-    packagingOptions {
-        exclude 'META-INF/LICENSE.txt'
-        exclude 'META-INF/NOTICE.txt'
-    }
-}
-repositories {
-    mavenCentral()
-    flatDir {
-        dirs 'libs' //就是你放aar的目录地址
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
     }
 }
 
-dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.1.1'
-    compile 'com.android.support:design:23.1.1'
-    compile 'cn.pedant.sweetalert:library:1.3'
-    compile files('libs/android-directionalviewpager-1.2.0.jar')
-    compile files('libs/MobTools-2016.0303.1229.jar')
-    compile files('libs/MobCommons-2016.0303.1229.jar')
-    compile name: 'SMSSDK-2.0.2', ext: 'aar'
-    compile files('libs/httpclient-4.2.5.jar')
-    compile files('libs/httpcore-4.2.4.jar')
-    compile files('libs/gson-2.3.1.jar')
-    compile 'com.miguelcatalan:materialsearchview:1.4.0'
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
 }

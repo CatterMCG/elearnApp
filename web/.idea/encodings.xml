@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/WEB-INF/src/com/db/DBManager.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/WEB-INF/src/com/service/Service.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/WEB-INF/src/com/servlet/FeedBackLet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/WEB-INF/src/com/servlet/FindUserLet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/WEB-INF/src/com/servlet/GetCourseLet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/WEB-INF/src/com/servlet/GetUserCourseInfoLet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/WEB-INF/src/com/servlet/GetUserTestInfoLet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/WEB-INF/src/com/servlet/PwdLet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/WEB-INF/src/com/servlet/RegLet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/WEB-INF/src/com/servlet/SendUserCourseInfoLet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/WEB-INF/src/com/servlet/SendUserTestInfoLet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/WEB-INF/src/com/servlet/UserInfoLet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/WEB-INF/src/com/servlet/VersionLet.java" charset="GBK" />
+  </component>
+</project>

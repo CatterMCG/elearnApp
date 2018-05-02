@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="MyProject:war exploded">
+    <output-path>$TOMCAT_HOME$/apache-tomcat-7.0.68/webapps/MyProject_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="MyProject" />
+          <element id="library" level="project" name="apache-tomcat-7.0" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="module" name="jasper.jar" module-name="MyProject" />
+          <element id="library" level="module" name="el-api.jar" module-name="MyProject" />
+          <element id="library" level="module" name="annotations-api.jar" module-name="MyProject" />
+          <element id="library" level="module" name="json-20151123.jar" module-name="MyProject" />
+          <element id="library" level="module" name="commons-beanutils-1.7.0.jar" module-name="MyProject" />
+          <element id="library" level="module" name="commons-lang-2.3.jar" module-name="MyProject" />
+          <element id="library" level="module" name="ezmorph-1.0.3.jar" module-name="MyProject" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="MyProject/web/Web" />
+    </root>
+  </artifact>
+</component>
